@@ -1,6 +1,7 @@
 # 参考资料
 - [Github Leetcode 题解](https://github.com/qiyuangong/leetcode)
 - [算法模板 Python 实现](https://github.com/dashidhy/algorithm-pattern-python)
+- [Python Docs](https://docs.python.org/3/howto/sorting.html)
 
 # 使用 Python3 的一些特性
 ## 逻辑
@@ -36,11 +37,11 @@ if a<= b<c :
     return true
 ```
 ### D 标准算法
+很多语法的内容都可以通过 Python 内置的库来实现。对于 Python 而言，栈和队列都可以使用 [List As Stacks](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks) 来实现。
 
 ```python
  # 排序
  sorted() 
-    https://docs.python.org/3/howto/sorting.html
     # 不仅仅是对列表而言的排序 字典也可以使用
     a = [5, 2, 3, 1, 4]
     a.sort()
@@ -59,7 +60,6 @@ if a<= b<c :
     sorted(student_tuples, key=lambda student: student[2])   # sort by age
     [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
 ```
-
 # 二叉树
 ## A 遍历
 ```python

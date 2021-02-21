@@ -51,4 +51,4 @@ def image(lengths: Iterable, zero: bool = False):
 
 if __name__ == '__main__':
     image(np.arange(start=2*R, stop=50.5*2*R, step=2*R), True)
-    image(np.arange(start=950*2*R, stop=1000.5*2*R, step=2*2*R), False)
+    image(np.arange(start=950*2*R, stop=1000.5*2*R, step=1*2*R), False)

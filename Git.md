@@ -20,7 +20,7 @@ git fetch 同步远程仓库的代码
 ## A-1 更新数据
 ```python
 git add . # 添加当前变化
-git status # 查看代码的修改变化
+git status # 查看代码的修改变化 以及各种报错的情况是什么
 git commit -m '注释' #添加注释
 git pull # 同步代码
 # 如果在这一步报错 重新添加仓库地址
@@ -29,7 +29,7 @@ git remote add origin https://github.com/afrunk/XUBA-For-BATTMD.git
 
 
 git push -u origin master # 把代码推到服务器上 master是分支的名字
-git puth -u origin +master# 强行更新
+git push -u origin +master# 强行更新
 ```
 
 ```python
@@ -83,5 +83,9 @@ git checkout --track origin/main
 # 合并分支到 master上 注意先提交分支的代码
 git checkout main # 切换分支
 git pull origin main  # 将远程上的代码 pull 下来
+git merge master
+
+# 查看分支合并情况
+git log --graph --pretty=oneline --abbrev-commit
 
 ```

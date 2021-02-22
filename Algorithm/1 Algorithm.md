@@ -1,11 +1,27 @@
 # 参考资料
-- [Github Leetcode 题解](https://github.com/qiyuangong/leetcode)
 - [算法模板 Python 实现](https://github.com/dashidhy/algorithm-pattern-python)
 - [Python Docs](https://docs.python.org/3/howto/sorting.html)
+- [Leetcode Python 题解和分类](https://github.com/Jack-Cherish/LeetCode)
+- [Leetcode 题解 无分类 全包含](https://github.com/liuchuo/LeetCode)
+
+## 刷题范围
+- [算法模板 Python 实现的习题](https://github.com/dashidhy/algorithm-pattern-python)
+- [Leetcode 卡片](https://leetcode-cn.com/explore/)
+- [LeetCode 热题100](https://leetcode-cn.com/problemset/leetcode-hot-100/)
+- [牛客名企试题](https://www.nowcoder.com/ta/job-code-high)
+- [剑指 Offer](https://www.nowcoder.com/ta/coding-interviews)
 
 # 使用 Python3 的一些特性
 ## 逻辑
 进行 Coding 面试时，如果不指定使用的编程语言，一般来讲考察的是做题的思路而不是编程本身，因此不需要从零开始实现一些基础的数据结构或算法，利用语言的一些特性和自带的标准库可以大大简化代码，提高做题速度。
+
+## 语法补充
+### A -> 的作用
+-> _Attrs 常常出现在 Python 函数定义的函数名后面，为函数添加元数据，描述函数的返回类型，从而方便开发人员使用。比如
+```python
+def add(X , Y) -> int:
+    return x + y
+```
 
 ## 常用特性
 ### A 数组初始化
@@ -59,58 +75,4 @@ if a<= b<c :
     ]
     sorted(student_tuples, key=lambda student: student[2])   # sort by age
     [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
-```
-# 二叉树
-## A 遍历
-```python
-# 前序遍历
-def PreOrder(self,root):
-    # 打印二叉树（先序）
-    if root == None:
-        return 
-    print(root.val,end=' ')
-    self.PreOrder(root.left)
-    self.PreOrder(root.right)
-
-# 中序遍历
-def InOrder(self,root):
-    # 打印二叉树（中序）
-    if root == None:
-        return
-    self.InOrder(root.left)
-    print(root.val,end=' ')
-    self.InOrder(root.right)
-
-# 后序遍历
-def BacOrder(self,root):
-    # 打印二叉树（后序）
-    if root == None:
-        return
-    self.BacOrder(root.left)
-    self.BacOrder(root.right)
-    print(root.val,end=' ')
-
-# 后序非递归遍历
-
-#层序遍历 广度优先搜索
-#用队列，依次将根、左子树、右子树存入队列，按照队列的先进先出原则来实现层次遍历
-def BFS(self,root):
-    if roort == None:
-        return
-    # queue 队列 保存结点
-    queue = []
-    quque.append(root)
-
-    while queue:
-			# 拿出队首节点
-			currentNode = queue.pop(0)
-			#vals.append(currentNode.val)
-			print(currentNode.val, end=' ')
-			if currentNode.left:
-				queue.append(currentNode.left)
-			if currentNode.right:
-				queue.append(currentNode.right)
-
-# 深度优先搜索
-
 ```
